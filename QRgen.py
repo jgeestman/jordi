@@ -25,7 +25,7 @@ class QRread:
         qr.add_data(data)
         qr.make(fit=True)
 
-        path1 = "Downloads"
+        path1 = "C:\\Users\\jordi\\OneDrive\\Documenten\\downloads"
         os.chdir(path1)
         mapx = """QR-code, verdieping {}, bwnr {}""".format(int(self.verd), (self.bwnr))
         os.makedirs(mapx)
@@ -34,4 +34,3 @@ class QRread:
         os.chdir(path2)
         img = qr.make_image(fill_color="white", back_color="black")
         img.save("""QR-code,verdieping {}, bwnr {}.png""".format(int(self.verd), (self.bwnr)))
-
