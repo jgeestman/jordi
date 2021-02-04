@@ -35,3 +35,4 @@ class QRread:
         img = qr.make_image(fill_color="white", back_color="black")
         img.save("""QR-code,verdieping {}, bwnr {}.png""".format(int(self.verd), (self.bwnr)))
 
+
